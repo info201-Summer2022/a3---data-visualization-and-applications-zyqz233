@@ -1,0 +1,63 @@
+---
+title: "Index"
+author: "Yangqiuzhe Zhu"
+date: '2022-08-14'
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Introduction
+
+For this assignment, I choose the data set of Incarceration Trends Dataset from
+VERA. In all the data set it provide to me, I choose incarceration_trends.csv as
+my main source to analyze the unfair of incarceration. For recent year, people
+are pay much more attention on race equality in different aspects like working,
+education, or medical condition. For this research, I pay my attention to the
+situation of incarceration trends to study the specific problems in the system
+which we considered is fair to everyone as we considered before.
+
+## Summary Information
+```{r,include=TRUE, echo=FALSE, code = readLines("summary_infomation.R")}
+print(summary_info)
+```
+
+From the summary information list I get from the dataset above, I found that
+during all the population, the population in **Jail**(mean rate is
+**4.318663%**) is less than the population in **Prison**(mean rate is 
+**6.689772%**). When I focus on gender problems which also been mentioned by
+people more frequently recently, I found that in all population, no matter in
+Jail or Prison, the average rate of **Male(7.514543%)** is higher than average
+rate of **Female(1.0408%)**. After that, I move to the race problems which this
+assignment most care about, and I found that the 
+**average rate of black people(27.47658%)** is much higher than the 
+**average rate of white people(4.463364%) **.
+
+## Trends over time chart
+```{r,echo=FALSE, code = readLines("time_chart.R")}
+```
+
+For this time trends chart, I compare how the Black and white Ratio change over
+time in New York County. The reason Why I choose New York County is because this
+county is always the central focus of race problem. The data in this county
+can be a good representation for that period of time.
+
+## Variable comparison chart
+```{r,echo=FALSE, code = readLines("compare_chart.R")}
+```
+
+For this two variable comparison chart, I compare the general situation of
+different gender between female and male in Prison. It is easy to find that
+the size of female population is relative lower than male population is the
+whole history in New York County.
+
+## Map Data
+```{r,echo=FALSE, code = readLines("usmap.R")}
+```
+
+In this map, I show the average value of Minority Proportion in different
+state to give a glimpse to the racial situation in the whole America. From this
+map, we can easily tell how serious the inequity of different is in different
+state of America.
